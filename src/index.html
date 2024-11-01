@@ -8,15 +8,33 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
+    <form class="form">
+      <label for="">
+        <input type="text" id="input" name="query" placeholder="Enter message">
+      </label>
+      
+      <button type="submit" class="button-submit" >Search</button>
+    </form>
+    <ul class="gallery"></ul>
 
-    <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
-    </main>
+    <!-- <div class="loader" >
+      <p>Loading...</p>
+    </div> -->
+    <button
+      type="button"
+      class="btn btn-primary button"
+      data-action="load-more"
+    >
+      <!-- Спінер -->
+      <span
+        class="spinner-border spinner-border-sm spinner is-hidden"
+        role="status"
+        aria-hidden="true"
+      ></span>
 
-    <load src="./partials/footer.html" />
+      <span class="label">Показати ще</span>
+    </button>
+
 
     <script type="module" src="./main.js"></script>
   </body>
